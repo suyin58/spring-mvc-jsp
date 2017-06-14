@@ -8,5 +8,13 @@
 </head>
 <body>
 <h1>登录界面</h1>
+<br/>
+<form action="<%=request.getAttribute("basePath") %>/logon/login">
+
+	<label>用户名称</label><input type="text" name="userName" />
+	<button type="submit"  >提交</button>
+	<br/>
+	<label style="color:red"><%=request.getAttribute("msg") %></label>
+</form>
 </body>
 </html>
